@@ -1,7 +1,7 @@
 def part_1():
     dial = 50
     zero_counter = 0
-    with open('data/day_1/part_1.txt', 'r') as f:
+    with open('data/day_1.txt', 'r') as f:
         for line in f:
             rotation = int(line.strip().replace('L','-').replace('R',''))
             dial += rotation
@@ -14,7 +14,7 @@ def part_1():
 def part_2():
     dial = 50
     zero_counter = 0
-    with open('data/day_1/part_1.txt', 'r') as f:
+    with open('data/day_1.txt', 'r') as f:
         for line in f:
             rotation = int(line.strip().replace('L','-').replace('R',''))
             current_dial = dial + rotation

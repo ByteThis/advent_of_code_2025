@@ -1,1 +1,3 @@
-# advent_of_code_2025
+# Advent of Code 2025 Solutions
+
+Python solutions to the [Advent of Code 2025](https://adventofcode.com/2025).
