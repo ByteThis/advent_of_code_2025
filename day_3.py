@@ -14,26 +14,6 @@ def part_2():
     combinations = []
     with open('data/day_3.txt', 'r') as f:
         for line in f:
-            input = line.strip()
-            batteries = [int(x) for x in input]
-            b = max(batteries[:-11])
-            jolts = str(b)
-            previous_index = input.index(str(b))
-
-            for i in range(-10,1):
-                b = max(batteries[previous_index+1:i]) if i else max(batteries[previous_index+1:])
-                jolts += str(b)
-                previous_index = input[previous_index:].index(str(b))+previous_index
-
-            combinations.append(int(jolts))
-
-    return sum(combinations)
-
-
-def part_2():
-    combinations = []
-    with open('data/day_3.txt', 'r') as f:
-        for line in f:
             batteries = [int(x) for x in line.strip()]
 
             limit = len(batteries) - 11
